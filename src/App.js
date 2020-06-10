@@ -34,7 +34,7 @@ setLastName(lame);
     <input  type='text' placeholder='Enter ur First Name' onChange={inputEvent} value={name}  />
     <input  type='text' placeholder='Enter ur Last Name' onChange={inputEvento} value={lame}  />
   
-    <button  type="submit">Click Me.. 😄</button>
+    <button  type="submit">Click Me 😄</button>
 </div>
 </form>
         </div>
