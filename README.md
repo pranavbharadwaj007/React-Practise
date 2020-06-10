@@ -1,4 +1,5 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Pranav N
+## I have stored all my react practise code mini projects here.
 
 ## Available Scripts
 
