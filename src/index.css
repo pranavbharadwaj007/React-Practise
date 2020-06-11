@@ -117,11 +117,17 @@ div{
 h1{
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   color: rgb(253, 250, 255);
-  font-size: 90pt;
+  font-size: 70pt;
   text-shadow: 2px 4px rgb(112, 111, 111);
 }
+p{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: rgb(253, 250, 255);
+  font-size: 20pt;
+  text-shadow: 2px 2px rgb(112, 111, 111);
+}
 button{
-  padding: 23px 34px;
+  padding: 10px 24px;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   color: rgb(65, 64, 64);
   font-size: 40pt;
@@ -136,9 +142,9 @@ button{
 input{
   outline: none;
   background-color: rgb(207, 213, 218);
-  font-size: 35pt;
+  font-size: 20px;
   color: rgb(43, 41, 41);
-  padding: 23px 34px;
+  padding: 7px 24px;
   font-size: 35pt;
   border-radius: 34px;
   margin-bottom: 19px;

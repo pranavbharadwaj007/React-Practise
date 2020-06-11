@@ -1,5 +1,5 @@
 ## Pranav N
-## I have stored all my react practise code mini projects here.
+## I have stored all my react practise code mini and projects here.
 
 ## Available Scripts
 

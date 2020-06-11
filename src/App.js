@@ -6,22 +6,64 @@ let count=1;
 
 
 const App=()=>{
-    const[name,setName]=useState('');
-    const[lame,setLame]=useState('');
-    const[fullname,setFullName]=useState();
-    const[lastname,setLastName]=useState();
-
+    const[fullName,setFullName]=useState({
+        fname:"",
+        lname : "",
+        email :"",
+        phone :"",
+    });
+    
     const inputEvent=(event)=>{
 console.log(event.target.value);
-setName(event.target.value);
+// const value=event.target.value;
+// const name=event.target.name;
+
+const {value,name}=event.target;
+setFullName((prev)=>{
+    if(name==='fname'){
+        return {
+
+            fname:value,
+            lname:prev.lname,
+            email:prev.email,
+            phone:prev.phone,
+        }
     }
-    const inputEvento=(event)=>{
-setLame(event.target.value);
+    else if(name==='lname'){
+        return {
+
+            fname:prev.fname,
+            lname:value,
+            email:prev.email,
+            phone:prev.phone,
+        }
     }
+    else if(name==='email'){
+        return {
+
+            fname:prev.fname,
+            lname:prev.lname,
+            email:value,
+            phone:prev.phone,
+        }
+    }
+    else if(name==='phone'){
+        return {
+
+            fname:prev.fname,
+            lname:prev.lname,
+            email:prev.email,
+            phone:value,
+        }
+    }
+})
+
+    }
+
+    
     const ons=(event)=>{
         event.preventDefault();
-setFullName(name);
-setLastName(lame);
+alert('form submitted');
     }
     
     return(
@@ -30,9 +72,15 @@ setLastName(lame);
 <form onSubmit={ons}>
 <div>
 
-    <h1> Hello {fullname} {lastname} </h1>
-    <input  type='text' placeholder='Enter ur First Name' onChange={inputEvent} value={name}  />
-    <input  type='text' placeholder='Enter ur Last Name' onChange={inputEvento} value={lame}  />
+    <h1> Hi, I am {fullName.fname} {fullName.lname} </h1>
+    <p>{fullName.email} </p>
+    <p>{fullName.phone} </p>
+    <input  type='text' placeholder='Enter ur First Name' name="fname" onChange={inputEvent} value={fullName.fname} autoComplete='off' />
+    <input  type='text' placeholder='Enter ur Last Name' name="lname" onChange={inputEvent} value={fullName.lname} autoComplete='off' />
+
+    <input  type='email' placeholder='Enter ur Email' autoComplete='off' name="email" onChange={inputEvent} value={fullName.email}   />
+
+    <input  type='number' placeholder='Enter ur Phone number' name="phone" onChange={inputEvent} value={fullName.phone} autoComplete="off" />
   
     <button  type="submit">Click Me 😄</button>
 </div>
@@ -41,6 +89,6 @@ setLastName(lame);
         </>
     );
   
-    
-};
+      
+    };
 export default App;
