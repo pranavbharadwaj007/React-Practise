@@ -1,15 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import Card from './Card';
-import Sdata from './Sdata';
 import * as serviceWorker from './serviceWorker';
 import App from './App';
 
 
 
 
-console.log(Sdata[0]);
+
 ReactDOM.render(
   
   <App/>
