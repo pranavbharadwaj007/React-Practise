@@ -1,17 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+// import './index.css';
+import './indexproj.css';
+
 import * as serviceWorker from './serviceWorker';
 import App from './App';
-
-
-
+import Proj from './Proj';
 
 
 ReactDOM.render(
   
-  <App/>
-  
+//  <App/>
+ <Proj/> 
   ,
   document.getElementById('root')
 );
