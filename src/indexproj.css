@@ -67,16 +67,34 @@ textarea{
   background-color: rgb(186, 194, 211);
 }
 .note{
-
-  width: 22%;
+  
+  text-align: center;
+  position:relative;
+  width: 34%;
+  height: 168px;
   display: flex;
+  overflow: auto;
   flex-direction: column;
   width: 22rem;
-  border:3px solid rgb(1, 63, 85);
+  border:3px solid rgb(132, 122, 192);
   border-radius:11px;
-  box-shadow: 5px 5px 6px 4px #00334d;
+  box-shadow: 5px 5px 6px 4px #7e70cf;
 }
-.btn{
+.note:hover{
+  
+  text-align: center;
+  position:relative;
+  width: 34%;
+  height: 168px;
+  display: flex;
+  overflow: auto;
+  flex-direction: column;
+  width: 22rem;
+  border:3px solid rgb(49, 42, 155);
+  border-radius:11px;
+  box-shadow: 5px 5px 6px 4px #050133;
+}
+.btnn{
    
   width: 20%;
   cursor: pointer;
@@ -85,18 +103,20 @@ textarea{
   background-color: rgba(87, 72, 218, 0.911);
   color: rgb(0, 0, 0);
   font-size: 17pt;
-  
+  position: absolute;
+right:    0;
+bottom:   0;
  padding: 0px 0px;
   outline: none;
   box-shadow: 5px 5px 15px -5px rgba(105, 4, 34, 0.589);
   
 }
-.btn:hover{
+.btnn:hover{
   cursor: pointer;
   border: none;
   background-color: rgba(218, 72, 72, 0.911);
   color: rgb(245, 240, 240);
-
+outline: none;
   box-shadow: 5px 5px 15px -5px rgba(19, 4, 105, 0.789);
   
 }
