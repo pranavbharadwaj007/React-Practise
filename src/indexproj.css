@@ -64,6 +64,7 @@ textarea{
   border-radius: 6px 6px 0px 0px;
   outline: none;
   border: none;
+  height: 160px;
   background-color: rgb(186, 194, 211);
 }
 .note{
@@ -81,7 +82,7 @@ textarea{
   box-shadow: 5px 5px 6px 4px #7e70cf;
 }
 .note:hover{
-  
+  background-color: rgb(233, 232, 240);
   text-align: center;
   position:relative;
   width: 34%;
@@ -90,9 +91,9 @@ textarea{
   overflow: auto;
   flex-direction: column;
   width: 22rem;
-  border:3px solid rgb(49, 42, 155);
+  border:3px solid rgb(155, 42, 42);
   border-radius:11px;
-  box-shadow: 5px 5px 6px 4px #050133;
+  box-shadow: 5px 5px 6px 4px #330101;
 }
 .btnn{
    
@@ -119,4 +120,102 @@ bottom:   0;
 outline: none;
   box-shadow: 5px 5px 15px -5px rgba(19, 4, 105, 0.789);
   
+}
+
+@media only screen and (max-width: 1205px) {
+ 
+  h5{
+    font-size: 19px;
+  }
+  .main_note{
+  
+    padding: 23px;
+    width: 55%;
+    
+  text-align: center;
+  justify-content: center;
+  margin: auto;
+    
+  }
+  .header{
+    margin-top: 25px;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+   justify-content: center;
+    background-color: rgb(166, 192, 224);
+    color: rgb(2, 21, 48);
+    border-radius: 20%;
+}
+input{
+  height: 100px;
+}
+textarea{
+ height: 300px;
+}
+.note{
+  width: 440px;
+}
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+ 
+  h5{
+    font-size: 19px;
+  }
+  .main_note{
+  
+    padding: 23px;
+    width: 95%;
+  text-align: center;
+  justify-content: center;
+  margin: auto;
+    
+  }
+  .header{
+    margin-top: 25px;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+   justify-content: center;
+    background-color: rgb(166, 192, 224);
+    color: rgb(2, 21, 48);
+    border-radius: 20%;
+}
+input{
+ 
+  padding: 9px;
+  text-align: center;
+  border-radius: 34px 34px 0px 0px;
+  outline: none;
+  border: none;
+  
+  background-color: rgb(229, 234, 241);
+}
+textarea{
+  text-align: center;
+  padding: 9px;
+  border-radius: 6px 6px 0px 0px;
+  outline: none;
+  border: none;
+  background-color: rgb(186, 194, 211);
+}
+.note{
+  
+  text-align: center;
+  position:relative;
+  width: 34%;
+  height: 168px;
+  display: flex;
+  overflow: auto;
+  flex-direction: column;
+  width: 22rem;
+  border:3px solid rgb(132, 122, 192);
+  border-radius:11px;
+  box-shadow: 5px 5px 6px 4px #7e70cf;
+}
+
 }
